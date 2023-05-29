@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First dApp</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body
+    class="bg-gray-900 text-white flex items-center justify-center h-screen"
+  >
+    <div class="bg-gray-800 rounded-lg p-8 shadow-lg w-full max-w-md">
+      <h1 class="text-4xl mb-4 text-center text-pink-500 font-extrabold">
+        This is my dApp!
+      </h1>
+      <p class="mb-4 text-center text-xl">Here we can set or get the mood:</p>
+      <div class="mb-4">
+        <label class="block mb-2 text-pink-500" for="mood">Input Mood:</label>
+        <input
+          class="bg-gray-700 border border-gray-600 p-2 w-full rounded text-white"
+          type="text"
+          id="mood"
+        />
+      </div>
+      <div class="flex justify-center">
+        <button
+          class="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded mr-2 transition-all"
+          onclick="getMood()"
+        >
+          Get Mood
+        </button>
+        <button
+          class="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded transition-all"
+          onclick="setMood()"
+        >
+          Set Mood
+        </button>
+      </div>
+      <p id="showMood" class="mt-4 text-center text-xl"></p>
+    </div>
+  </body>
+</html>

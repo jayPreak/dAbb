@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
+  },
+  "scripts": {
+    "build-css": "npx tailwindcss build src/style.css -o public/output.css",
+    "watch:css": "nodemon -e css -x \"npm run build-css\""
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
